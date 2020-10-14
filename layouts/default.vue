@@ -13,32 +13,37 @@
           </p>
         </div>
         <div class="w-full text-sm lg:w-1/4 mt-6 lg:mt-0">
-          <ul class="nav social-links flex-column">
-            <li class="nav-item mb-2">
+          <ul class="nav social-links flex flex-start lg:justify-center">
+            <li class="nav-item mr-2">
               <a target="_blank" href="https://facebook.com/travelmba">
                 <img
                   src="https://travelmba.net/assets/img/facebook-white.svg"
                   alt
                 />
-                facebook.com/travelmba
               </a>
             </li>
-            <li class="nav-item mb-2">
+            <li class="nav-item mr-2">
               <a target="_blank" href="https://instagram.com/travelmba">
                 <img
                   src="https://travelmba.net/assets/img/instagram-white.svg"
                   alt
                 />
-                instagram.com/travelmba
               </a>
             </li>
-            <li class="nav-item mb-2">
+            <li class="nav-item mr-2">
               <a target="_blank" href="https://t.me/travelmba">
                 <img
                   src="https://travelmba.net/assets/img/telegram-white.svg"
                   alt
                 />
-                t.me/travelmba
+              </a>
+            </li>
+            <li class="nav-item mr-2">
+              <a target="_blank" href="https://t.me/travel.mba">
+                <img
+                  src="https://travelmba.net/wp-content/themes/dk-waves-child-theme/images/icons/envelope-white.svg"
+                  alt
+                />
               </a>
             </li>
           </ul>
@@ -69,9 +74,9 @@
         </div>
         <div class="w-full lg:w-1/4 mt-6 lg:mt-0 lg:text-right text-xs">
           <div
-            class="block md:flex items-center lg:justify-end text-left media-providers mb-6"
+            class="flex items-center lg:max-w-md flex-start lg:justify-center text-left lg:text-center media-providers mx-auto mb-6"
           >
-            <div class="image w-full lg:w-1/2 mb-4 md:mb-0 mr-0 md:mr-5">
+            <div class="image w-auto lg:w-1/2 mb-4 md:mb-0  mr-5 lg:mr-0">
               <a
                 ref="nofollow"
                 target="_blank"
@@ -80,7 +85,7 @@
                 <img src="images/mono-white.svg" widht="177" />
               </a>
             </div>
-            <div class="image w-full lg:w-1/3 mb-4 md:mb-0">
+            <div class="image w-auto lg:w-1/2 mb-4 md:mb-0  mr-5 lg:mr-0">
               <a
                 ref="nofollow"
                 target="_blank"
@@ -89,7 +94,7 @@
                 <img src="images/soundcloud-logo.svg" widht="71" />
               </a>
             </div>
-            <div class="image w-full lg:w-1/3 mb-4 md:mb-0">
+            <div class="image w-auto lg:w-1/2 mb-4 md:mb-0  mr-5 lg:mr-0">
               <a
                 ref="nofollow"
                 target="_blank"
@@ -112,6 +117,7 @@
           </p>
         </div>
       </div>
+      <p class="color-white mt-5 text-center">© 2015 - 2020</p>
     </footer>
   </div>
 </template>

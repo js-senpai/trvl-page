@@ -11,7 +11,7 @@
       watchedElId: 'podcast-info',
       startValue: 0,
       endValue: endVal,
-      options: { duration: 5, suffix: '+' }
+      options: { duration: 2, suffix: '+', separator: ' ' }
     }"
   />
 </template>

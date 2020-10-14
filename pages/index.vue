@@ -6,7 +6,7 @@
           <Logo />
           <div class="block lg:hidden">
             <button
-              class="flex items-center px-3 py-2 rounded text-white focus:outline-none hover:outline-none"
+              class="hidden items-center px-3 py-2 rounded text-white focus:outline-none hover:outline-none"
             >
               <svg
                 class="fill-current h-3 w-3"
@@ -65,19 +65,37 @@
       <div class="container align-bottom max-w-full mt-0 lg:mt-10">
         <div class="wrapper max-w-2xl mx-auto">
           <div
-            class="flex items-center max-w-md lg:justify-end text-center media-providers mx-auto mb-6"
+            class="flex items-center lg:max-w-md flex-start lg:justify-center text-left lg:text-center media-providers mx-auto mb-6"
           >
-            <div class="image w-1/2">
-              <img src="images/mono-white.svg" widht="177" />
+            <div class="image w-auto lg:w-1/2 mb-4 md:mb-0  mr-5 lg:mr-0">
+              <a
+                ref="nofollow"
+                target="_blank"
+                href="https://podcasts.apple.com/us/podcast/travel-mba-%D0%BF%D0%BE%D0%B4%D0%BA%D0%B0%D1%81%D1%82-%D0%BF%D1%80%D0%BE-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B3%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8-%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE/id964351447?itsct=podcast_box&itscg=30200"
+              >
+                <img src="images/mono-white.svg" widht="177" />
+              </a>
             </div>
-            <div class="image w-1/3">
-              <img src="images/soundcloud-logo.svg" widht="71" />
+            <div class="image w-auto lg:w-1/2 mb-4 md:mb-0  mr-5 lg:mr-0">
+              <a
+                ref="nofollow"
+                target="_blank"
+                href="https://open.spotify.com/show/1eZh7tqqbYurzVmQX0VhiJ"
+              >
+                <img src="images/soundcloud-logo.svg" widht="71" />
+              </a>
             </div>
-            <div class="image w-1/3">
-              <img
-                src="images/spotify-logo.png"
-                srcset="images/spotify-logo@2x.png 2x"
-              />
+            <div class="image w-auto lg:w-1/2 mb-4 md:mb-0  mr-5 lg:mr-0">
+              <a
+                ref="nofollow"
+                target="_blank"
+                href="https://soundcloud.com/travelmba"
+              >
+                <img
+                  src="images/spotify-logo.png"
+                  srcset="images/spotify-logo@2x.png 2x"
+                />
+              </a>
             </div>
           </div>
           <p class="mb-10">
@@ -97,12 +115,14 @@
                 E-Mail указан неверно
               </p>
             </div>
-            <base-button
-              :processing="processForm"
-              type="submit"
-              class="btn btn-g-orange btn-lg w-full max-w-lg font-normal font-medium text-base mt-6"
-              >Слушать подкасты</base-button
-            >
+            <div class="flex justify-center">
+              <base-button
+                :processing="processForm"
+                type="submit"
+                class="btn btn-g-orange btn-lg w-full max-w-lg font-normal font-medium text-base mt-6"
+                >Слушать подкасты</base-button
+              >
+            </div>
           </form>
         </div>
       </div>
@@ -111,7 +131,7 @@
       <div
         class="container flex justify-between items-center max-w-6xl flex-wrap lg:flex-no-wrap"
       >
-        <h4 class="normal-case mb-4 lg:mb-0 mx-0 w-full lg:w-auto">
+        <h4 class="normal-case font-bold mb-4 lg:mb-0 mx-0 w-full lg:w-auto">
           О нас говорят:
         </h4>
         <div class="logo w-1/3 lg:w-auto">
@@ -158,7 +178,7 @@
         </div>
       </div>
     </section>
-    <section id="about-podcast" class="lg:text-center">
+    <section id="about-podcast" class="pt-0 lg:text-center">
       <div class="container">
         <h3>О ПОДКАСТЕ</h3>
         <hr class="g-orange mx-0 lg:mx-auto" />
@@ -188,19 +208,19 @@
         <CounterBlock text="Эпизодов" max="48" />
         <CounterBlock text="Уникальных прослушиваний." max="254000" />
         <CounterBlock
-          text="уникальных прослушиваний <br />каждого эпизода"
+          text="Уникальных прослушиваний <br />каждого эпизода"
           max="7000"
         />
         <CounterBlock
-          text="стран мира охватывает<br />аудитория подкаста"
+          text="Стран мира охватывает<br />аудитория подкаста"
           max="50"
         />
       </div>
     </section>
-    <section id="gusests-podcast" class="text-left lg:text-center">
+    <section id="gusests-podcast" class="pt-2 text-left lg:text-center">
       <div class="container">
         <h3>ГОСТИ ПОДКАСТА</h3>
-        <hr class="g-orange" />
+        <hr class="ml-0 lg:ml-auto g-orange" />
       </div>
       <div class="container text-xl max-w-6xl">
         <p>
@@ -381,12 +401,14 @@
                 Имя указано неверно
               </p>
             </div>
-            <base-button
-              :processing="processForm"
-              type="submit"
-              class="btn btn-g-orange btn-lg w-full max-w-lg font-normal font-medium text-base mt-6"
-              >Слушать подкаст</base-button
-            >
+            <div class="flex justify-center">
+              <base-button
+                :processing="processForm"
+                type="submit"
+                class="btn btn-g-orange btn-lg w-full max-w-lg font-normal font-medium text-base mt-6"
+                >Слушать подкасты</base-button
+              >
+            </div>
           </form>
         </div>
       </div>
